@@ -17,6 +17,22 @@ WonderForge 是一个「旧物 × AI」创意改造平台：从奇物库中挑�
 
 项目诞生于 48 小时黑客松，定位为「温柔的科技」：让原本有意义的事物更加有意义，让本该是遗憾的事物不再无能为力。
 
+**English Overview**
+
+WonderForge is an "old objects × AI" creative remixing platform born in a 48-hour hackathon, with a vision of "gentle technology". Pick a meaningful everyday object from a 150-item library, combine it with functional parts and AI modules, describe your expectation, and the AI generates a complete product concept — name, description, gameplay, materials, assembly steps, and a photorealistic rendering. It runs as a web app with a React + Vite + Three.js frontend and an Express backend that proxies a Xiaoyunque AI OpenAPI for concept and image generation.
+
+## 技术栈 · Tech Stack
+
+| 层次 Layer | 技术 Technology | 用途 Purpose |
+| --- | --- | --- |
+| 前端 Frontend | React + Vite | Web 界面 Web UI |
+| 3D | Three.js | 明星演示 3D demos |
+| 后端 Backend | Express 4 (Node.js, ESM) | REST API 服务 REST API |
+| 中间件 Middleware | cors, dotenv | 跨域与配置 CORS & config |
+| AI 服务 AI | 小云雀 XYQ OpenAPI | 方案与图片生成 Concept & image generation |
+| 存储 Storage | 本地文件缓存 + localStorage | 图片与草稿缓存 Image & draft cache |
+| 部署 Deploy | Deno / GitHub Actions | 部署与 CI Deployment & CI |
+
 ---
 
 ## 功能亮点
